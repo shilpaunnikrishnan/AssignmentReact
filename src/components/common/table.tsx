@@ -60,7 +60,7 @@ const TableComponent: React.FC<tableProps> = ({
           </th>
           <th>
             <div className="tableHeadDiv">
-              <div>File Type/Size</div>
+              <div>File Size</div>
               {isFromFolder ? (
                 <div>
                   <img
@@ -111,7 +111,7 @@ const TableComponent: React.FC<tableProps> = ({
                 )}
               </td>
               <td>{item.added}</td>
-              <td>{item.type}</td>
+              <td>{item.size}mb</td>
             </tr>
             //   </div>
           ))}
