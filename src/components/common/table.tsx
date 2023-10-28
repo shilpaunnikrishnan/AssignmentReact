@@ -1,6 +1,9 @@
 import * as React from "react";
 import sortIcon from "../../assets/icons/sort.png";
 import folderIcon from "../../assets/icons/folder.png";
+import fileIcon from "../../assets/icons/fileIcon.png";
+import pdfIcon from "../../assets/icons/pdf.png";
+import csvIcon from "../../assets/icons/csv.png";
 import { NavLink } from "react-router-dom";
 interface tableProps {
   isFromFolder?: boolean;
@@ -24,6 +27,7 @@ const TableComponent: React.FC<tableProps> = ({
                 <div>
                   <img
                     src={sortIcon}
+                    alt="sort"
                     style={{ height: "20px", width: "20px" }}
                     onClick={() => {
                       if (onSortAscClick) {
@@ -42,6 +46,7 @@ const TableComponent: React.FC<tableProps> = ({
                 <div>
                   <img
                     src={sortIcon}
+                    alt="sort"
                     style={{ height: "20px", width: "20px" }}
                     onClick={() => {
                       if (onSortAscClick) {
@@ -55,11 +60,12 @@ const TableComponent: React.FC<tableProps> = ({
           </th>
           <th>
             <div className="tableHeadDiv">
-              <div>File Type</div>
+              <div>File Type/Size</div>
               {isFromFolder ? (
                 <div>
                   <img
                     src={sortIcon}
+                    alt="sort"
                     style={{ height: "20px", width: "20px" }}
                     onClick={() => {
                       if (onSortAscClick) {
@@ -80,7 +86,16 @@ const TableComponent: React.FC<tableProps> = ({
             <tr>
               <td style={{ display: "flex", alignItems: "center" }}>
                 <img
-                  src={folderIcon}
+                  src={
+                    isFromFolder
+                      ? item.type === "pdf"
+                        ? pdfIcon
+                        : item.type === "csv"
+                        ? csvIcon
+                        : folderIcon
+                      : fileIcon
+                  }
+                  alt="type"
                   style={{ height: "35px", width: "35px" }}
                 />
                 {isFromFolder ? (
