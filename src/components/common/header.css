@@ -1,0 +1,27 @@
+.mainDivHeader {
+  display: flex;
+  justify-content: space-between;
+  background-color: #2196f3;
+  padding: 1em;
+  height: 3em;
+}
+
+.displayFlex {
+  display: flex;
+}
+
+.textAlignEnd {
+  text-align: end;
+}
+
+.menuItem {
+  font-size: 1.2em;
+  color: #fff;
+  justify-content: space-between;
+  font-weight: normal;
+  padding-right: 1em;
+}
+.linkStyle {
+  text-decoration: none;
+  color: #fff;
+}

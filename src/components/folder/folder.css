@@ -1,0 +1,66 @@
+.displayFlexFolder {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 2em;
+  padding: 2em;
+}
+.tableDiv {
+  padding-top: 1em;
+}
+.textBox {
+  width: 30%;
+  height: 2.5em;
+  border-radius: 0.5em;
+  border: 2px solid #eee;
+}
+.searchButton{
+  width: 6em;
+  height:2.5em;
+  margin-left: 1em;
+  background-color: #2196f3;
+  color: #fff;
+  font-weight: 400;
+  border-radius: 0.5em;
+  border: 2px solid #2196f3;
+ 
+}
+.paddingSmall {
+  padding: 2em;
+  display: block;
+}
+
+.textAlignEnd {
+  text-align: end;
+}
+
+.menuItem {
+  font-size: 1.2em;
+  color: #fff;
+  justify-content: space-between;
+  font-weight: normal;
+  padding-right: 1em;
+}
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td,
+th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+.tableHeadDiv{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+.linkDiv{
+  text-decoration: none;
+  color: black;
+}
