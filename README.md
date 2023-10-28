@@ -1,3 +1,8 @@
+#Added both redux code and normal code to get JSON values to show content
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
